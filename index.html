@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe home</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+
+            font-family: 'Jua', sans-serif;
+        }
+
+        p#big_title{
+            font-size:45px;
+            padding-top: 40px;
+            text-align: center;
+            height: 100px;
+            background-color: rgb(255, 203, 196);
+            margin: 0px;
+        }
+        
+        h2{
+            padding: 20px;
+            margin-top: 0px;
+            font-style: italic;
+            color: rgb(255, 105, 105);
+            background-color:rgb(253, 227, 224);
+
+        }
+        
+        img{
+            width: 270px;
+            height: 250px;
+            /* padding-right: 20px; */
+        }
+        img#person{
+            width: 200px;
+            height: 200px;
+            padding-right: 50px;
+            position: fixed;
+            right: 10px;
+            top: 20px;
+      
+        }
+
+        p#title{
+            display: inline;
+            font-size: 30px;
+        }
+
+        p#line{
+            border: 1px solid black;
+            width: 200px;
+            margin-top: 0;
+        }
+
+        p#about{  
+            margin: 0;
+            display: inline;
+            color: rgb(133, 133, 133);
+            font-size: 20px;
+            text-align:start;
+            
+        }
+
+        
+        .img_box{
+            
+            width: 270px;
+            /* border: 2px solid pink;     나중에 지울 것 */
+        }
+        
+        .about_box{
+            position: relative;
+            left: 310px;
+            bottom: 255px;
+            display: inline;
+            /* border: 2px solid orange; */
+        }
+
+        button{
+            position: absolute;
+            top: 200px;
+            font-size: large;
+        }
+        hr{
+            /* margin-top: 30px; */
+            margin-bottom: 50px;
+        }
+        h3{
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 카페 소개 -->
+    <div class="main_box">
+        <img id="person" src="img/person.png" alt="person">
+        <p id="big_title">&#127856; Welcome Su Cafe &#9749;</p>
+        <h2>Choose your Coffee!</h2><br>
+    </div>
+        
+    <!-- 메뉴 설명 및 눌러서 주문 하기  -->
+   
+
+<!-- 아메리카노 -->
+        <div class="img_box">
+            <img src="img/americano.jpg" alt="Americano">
+        </div>
+        <div class="about_box">
+            <p id="title">AMERICANO</p><br><br>
+            <p id="line"></p>
+            <p style="background-color: beige; display: inline;">Price : 4,000won</p><br><br>
+            <p id="about">진한 에스프레소에 시원한 정수물과 얼음을 더하여 깔끔하고 강렬한 에스프레소를 가장 부드럽고 시원하게 즐길 수 있는 커피</p><br>
+            <button onclick="window.open('kitchen.html')" >AMERICANO</button>   
+        </div>
+    <hr>
+
+<!-- 에스프레소 -->
+        <div class="img_box">
+            <img src="img/expresso.jpg" alt="Espresso"> 
+        </div>
+        <div class="about_box">
+            <p id="title">ESPRESSO</p><br><br>
+            <p id="line"></p>
+            <p style="background-color: beige; display: inline;">Price : 3,500won</p><br><br>
+            <p id="about">에스프레소는 향기로운 크레마 층과 바디 층, 하트 층으로 이루어져 있으며, 입안 가득히 커피와 달콤한 카라멜 향이 느껴지는 커피</p><br>
+            <button onclick="window.open('kitchen.html')" >Espresso</button>
+        </div>
+    <hr>
+<!-- 카페라떼 -->
+        <div>
+            <img src="img/latte.jpg" alt="Cafelatte">  
+        </div>
+        <div class="about_box">
+            <p id="title">CAFE LATTE</p><br><br>
+            <p id="line"></p>
+            <p style="background-color: beige; display: inline;">Price : 4,500won</p><br><br>
+            <p id="about">풍부하고 진한 에스프레소가 신선한 스팀 밀크를 만나 부드러워진 커피 위에 우유 거품을 살짝 얹은 대표적인 커피 라떼</p><br>
+            <button onclick="window.open('kitchen.html')" >Latte</button>
+        </div>    
+    <hr>
+<!-- 카페 모카 -->
+        <div class="img_box">
+        <img src="img/mocha.jpg" alt="Cafemocha"> 
+    </div>
+    <div class="about_box">
+        <p id="title">CAFE MOCHA</p><br><br>
+        <p id="line"></p>
+        <p style="background-color: beige; display: inline;">Price : 4,700won</p><br><br>
+        <p id="about">진한 초콜릿 모카 시럽과 풍부한 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 진한 에스프레소와 초콜릿 맛이 어우러진 커피</p><br>
+        <button onclick="window.open('kitchen.html')" >Mocha</button>
+    </div>   
+    <hr>
+<!-- 캬라멜 마끼야또 -->
+        <div class="img_box">
+        <img src="img/macchiato.jpg" alt="Caramelmacchiato"> 
+    </div>
+    <div class="about_box">
+        <p id="title">CARAMEL MACCHIATO</p><br><br>
+        <p id="line"></p>
+        <p style="background-color: beige; display: inline;">Price : 5,000won</p><br><br>
+        <p id="about">향긋한 바닐라 시럽과 시원한 우유를 넣고 점을 찍듯이 에스프레소를 부은 후 벌집 모양으로 카라멜 드리즐을 올린 달콤한 커피 음료</p><br> 
+        <button onclick="window.open('kitchen.html')" >Macchiate</button>
+    </div>       
+    <hr>
+<!-- 카푸치노 -->
+    <div class="img_box">
+            <img src="img/cappuccino.jpg" alt="Cappuccino"> 
+    </div>
+    <div class="about_box">
+        <p id="title">CAPPUCCINO</p><br><br>
+        <p id="line"></p>
+        <p style="background-color: beige; display: inline;">Price : 4,700won</p><br><br>
+        <p id="about">풍부하고 진한 에스프레소에 따뜻한 우유와 벨벳 같은 우유 거품이 1:1 비율로 어우러져 마무리된 커피</p><br> 
+        <button onclick="window.open('kitchen.html')" >Cappuccino</button>
+    </div>       
+ 
+
+    
+
+    
+</body>
+</html>
