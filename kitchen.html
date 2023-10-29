@@ -3,76 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Kitchen</title>
+    <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 
-    <title>Cafe Kitchen</title>
+    <!-- css -->
+    <link rel="stylesheet" href="kitchen.css">
 </head>
-    <style>
-        *{
-        font-family: 'Jua', sans-serif;
-        }
-        .ingredients{
-            position:absolute;
-            top: 88px;
-            left: 400px;
-            margin-right: 100px;
-            margin-left: 100px;
-            padding: 20px;
-            
-            border: 2px solid rgb(255, 23, 23);
-
-        }
-
-        .ingredients img{
-            
-            height: 130px;
-            width: 130px;
-        }
-
-        #blank_img{
-            width: 400px;
-            height: 400px;
-            border: 2px solid black;
-        }
-        
-
-        
-    </style>
 
 <body>
-    <h1>&#x1F37D; Make Coffee &#x1F37D;</h1>
+
+    <!-- 키친 소개 -->
+    <div class="main_box">
+        <img id="cashier" src="img/cashier.png" alt="cashier">
+        <p id="big_title">&#x1F37D; Make Coffee &#x1F37D;</p>
+        <h2 id="title2"></h2><br>
+    </div>
+    
+    <p id="menu">menu</p>
 
     <div id="blank_img">
         index에서 메뉴 누르면 여기에 메뉴 사진이 들어옴
     </div>
+
+    <p id="ingredients">Ingredients</p>
+    
+    
     <div class="ingredients">
         <img src="img/shot.jpg" alt="Shot">
         <button>300won</button> 
-
+        
         <img src="img/water.jpg" alt="Water">
         <button>100won</button> 
-
+        
         <img src="img/milk.jpg" alt="Milk"> 
         <button>200won</button> 
-
+        
         <img src="img/mokasyrup.jpg" alt="MokaSyrup">
         <button>150won</button> 
-
+        
         <img src="img/caramelsyrup.jpg" alt="CaramelSyrup">
         <button>150won</button> 
-
+        
         <img src="img/powder.jpg" alt="ChocoPowder">
         <button>130won</button> 
-
+        
         <img src="img/steam.jpg" alt="SteamMilk">
         <button>250won</button> 
-
+        
         <img src="img/decaffeinbean.jpg" alt="DecaffeinBean">
         <button>400won</button> 
+        
+    </div><br>
+    
+    <p id="cash">수익</p>
 
+    <div class="money">
+        <div id="photoprice">
+            사진에서 넘어 올 가격
+        </div>
+        <p style="display: inline;">-</p>
+        <div id="i1">
+            넘어 오는 재료1
+        </div>
+        <div id="i2">
+            넘어 오는 재료2
+        </div>
+        =
+        <div id="fure">
+            순수익
+        </div>
     </div>
+
+    
+    <div id="total">총 매출 (누적값)</div>
+    
 
 </body>
 </html>

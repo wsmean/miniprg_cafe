@@ -10,95 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 
-    <style>
-        *{
-
-            font-family: 'Jua', sans-serif;
-        }
-
-        p#big_title{
-            font-size:45px;
-            padding-top: 40px;
-            text-align: center;
-            height: 100px;
-            background-color: rgb(255, 203, 196);
-            margin: 0px;
-        }
-        
-        h2{
-            padding: 20px;
-            margin-top: 0px;
-            font-style: italic;
-            color: rgb(255, 105, 105);
-            background-color:rgb(253, 227, 224);
-
-        }
-        
-        img{
-            width: 270px;
-            height: 250px;
-            /* padding-right: 20px; */
-        }
-        img#person{
-            width: 200px;
-            height: 200px;
-            padding-right: 50px;
-            position: fixed;
-            right: 10px;
-            top: 20px;
-      
-        }
-
-        p#title{
-            display: inline;
-            font-size: 30px;
-        }
-
-        p#line{
-            border: 1px solid black;
-            width: 200px;
-            margin-top: 0;
-        }
-
-        p#about{  
-            margin: 0;
-            display: inline;
-            color: rgb(133, 133, 133);
-            font-size: 20px;
-            text-align:start;
-            
-        }
-
-        
-        .img_box{
-            
-            width: 270px;
-            /* border: 2px solid pink;     나중에 지울 것 */
-        }
-        
-        .about_box{
-            position: relative;
-            left: 310px;
-            bottom: 255px;
-            display: inline;
-            /* border: 2px solid orange; */
-        }
-
-        button{
-            position: absolute;
-            top: 200px;
-            font-size: large;
-        }
-        hr{
-            /* margin-top: 30px; */
-            margin-bottom: 50px;
-        }
-        h3{
-            display: inline;
-        }
-
-    </style>
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
     <!-- 카페 소개 -->
@@ -120,9 +35,17 @@
             <p id="line"></p>
             <p style="background-color: beige; display: inline;">Price : 4,000won</p><br><br>
             <p id="about">진한 에스프레소에 시원한 정수물과 얼음을 더하여 깔끔하고 강렬한 에스프레소를 가장 부드럽고 시원하게 즐길 수 있는 커피</p><br>
-            <button onclick="window.open('kitchen.html')" >AMERICANO</button>   
+            <button onclick="Americano()" >AMERICANO</button>
         </div>
     <hr>
+
+    <script>
+        function Americano(){
+            window.open("kitchen.html")
+            // document.write("<img src = img/americano.jpg>");
+        }
+    </script>
+
 
 <!-- 에스프레소 -->
         <div class="img_box">
