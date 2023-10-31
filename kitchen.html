@@ -11,9 +11,12 @@
 
     <!-- css -->
     <link rel="stylesheet" href="kitchen.css">
+    <!-- javascript -->
+    <script src="menu.js"></script>
 </head>
 
 <body>
+
 
     <!-- 키친 소개 -->
     <div class="main_box">
@@ -25,8 +28,15 @@
     <p id="menu">menu</p>
 
     <div id="blank_img">
-        index에서 메뉴 누르면 여기에 메뉴 사진이 들어옴
+        <img id=img1 src="" alt="">
     </div>
+
+    <script>
+        let $img = document.querySelector('#img1');
+        let file_name1 = localStorage.getItem('file_name');
+        $img.src = file_name1;
+    </script>
+
 
     <p id="ingredients">Ingredients</p>
     
