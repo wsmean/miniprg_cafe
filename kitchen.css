@@ -4,6 +4,7 @@
     }
 
     .ingredients{
+        display: block;
         position:absolute;
         width: 1250px;
         right: 100px;
@@ -114,13 +115,6 @@
     }
 
     div#i1{
-        padding: 5px;
-        margin: 5px;
-        display: inline;
-        border: 2px solid black;
-    }
-
-    div#i2{
         padding: 5px;
         margin: 5px;
         display: inline;

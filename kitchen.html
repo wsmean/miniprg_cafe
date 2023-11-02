@@ -12,7 +12,7 @@
     <!-- css -->
     <link rel="stylesheet" href="kitchen.css">
     <!-- javascript -->
-    <script src="menu.js"></script>
+    <script src="kitchen.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <!-- 키친 소개 -->
     <div class="main_box">
         <img id="cashier" src="img/cashier.png" alt="cashier">
-        <p id="big_title">&#x1F37D; Make Coffee &#x1F37D;</p>
+        <p id="big_title">&#128203; STAFF ONLY &#128203;</p>
         <h2 id="title2"></h2><br>
     </div>
     
@@ -36,6 +36,7 @@
         let file_name1 = localStorage.getItem('file_name');
         $img.src = file_name1;
     </script>
+    
 
 
     <p id="ingredients">Ingredients</p>
@@ -76,10 +77,7 @@
         </div>
         <p style="display: inline;">-</p>
         <div id="i1">
-            넘어 오는 재료1
-        </div>
-        <div id="i2">
-            넘어 오는 재료2
+            넘어 오는 재료
         </div>
         =
         <div id="fure">

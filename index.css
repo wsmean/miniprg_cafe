@@ -56,6 +56,11 @@ p#about{
     
 }
 
+p#price{
+    background-color: beige;
+    display: inline;
+}
+
 
 .img_box{
     
