@@ -31,11 +31,15 @@
         <img id=img1 src="" alt="">
     </div>
 
-    <script>
-        let $img = document.querySelector('#img1');
-        let file_name1 = localStorage.getItem('file_name');
-        $img.src = file_name1;
-    </script>
+<script>
+    let $img = document.querySelector('#img1');
+    let file_name1 = localStorage.getItem('file_name');
+    $img.src = file_name1;
+
+    
+    
+</script>
+
     
 
 
@@ -44,28 +48,36 @@
     
     <div class="ingredients">
         <img src="img/shot.jpg" alt="Shot">
-        <button>300won</button> 
+        <input type="button" value="300원" onclick="btnFun1(1)">
+        
         
         <img src="img/water.jpg" alt="Water">
-        <button>100won</button> 
+        <input type="button" value="100원" onclick="btnFun1(2)">
+
         
         <img src="img/milk.jpg" alt="Milk"> 
-        <button>200won</button> 
+        <input type="button" value="200원" onclick="btnFun1(3)">
+
         
         <img src="img/mokasyrup.jpg" alt="MokaSyrup">
-        <button>150won</button> 
+        <input type="button" value="150원" onclick="btnFun1(4)">
+
         
         <img src="img/caramelsyrup.jpg" alt="CaramelSyrup">
-        <button>150won</button> 
+        <input type="button" value="150원" onclick="btnFun1(5)">
+
         
         <img src="img/powder.jpg" alt="ChocoPowder">
-        <button>130won</button> 
+        <input type="button" value="130원" onclick="btnFun1(6)">
+
         
         <img src="img/steam.jpg" alt="SteamMilk">
-        <button>250won</button> 
+        <input type="button" value="250원" onclick="btnFun1(7)">
+
         
         <img src="img/decaffeinbean.jpg" alt="DecaffeinBean">
-        <button>400won</button> 
+        <input type="button" value="400원" onclick="btnFun1(8)">
+
         
     </div><br>
     
@@ -77,7 +89,8 @@
         </div>
         <p style="display: inline;">-</p>
         <div id="i1">
-            넘어 오는 재료
+        <p id="putcoin" style="display: inline;">들어올돈</p>
+            
         </div>
         =
         <div id="fure">
@@ -86,7 +99,9 @@
     </div>
 
     
+    <div id="total">판매 수량</div>
     <div id="total">총 매출 (누적값)</div>
+
     
 
 </body>

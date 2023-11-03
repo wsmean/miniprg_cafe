@@ -6,10 +6,8 @@ function setImg(coffee){
     let file_name;
     
     console.log(coffee);
-    if(coffee === '1'){
-        $img = document.querySelector('#Ame');
-        
-        
+    if(coffee == '1'){
+        $img = document.querySelector('#Ame');    
     }else if(coffee == '2'){
         $img = document.querySelector('#Esp');
         
