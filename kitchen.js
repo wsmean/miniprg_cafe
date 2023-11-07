@@ -26,7 +26,6 @@
         console.log(coin);
         document.getElementById('putcoin').innerHTML = coin;
         
-        function img_prc1(){
-            
-        }
     };
+
+    

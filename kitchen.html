@@ -25,6 +25,8 @@
         <h2 id="title2"></h2><br>
     </div>
     
+
+<div class="parents">   
     <p id="menu">menu</p>
 
     <div id="blank_img">
@@ -34,21 +36,38 @@
 <script>
     let $img = document.querySelector('#img1');
     let file_name1 = localStorage.getItem('file_name');
-    let img_prc = localStorage.getItem('price');
     $img.src = file_name1;
-    
 
-    
+    let img_prc1 = localStorage.getItem('price');
+    $img_prc = img_prc1;
+
     
 </script>
 
+        <p id="Receipe">Receipe</p>
+        <div id="Receipe01">
+
+            <ul id="Receipe02">
+                <li> <p id="sname">Americano</p> = Shot(2) + Water(1)</li><br>
+                <li> <p id="sname">Espresso</p> = Shot(2) </li><br>
+                <li> <p id="sname">Cafelatte</p> = Shot(1) + Milk(1) </li><br>
+                <li> <p id="sname">Cafemocha</p> = Shot(1) + Milk(1) + MochaSyrup(1) + ChocoPowder(1) </li><br>
+                <li> <p id="sname">Caramel macchiato</p> = Shot(1) + Milk(1) + CaramelSyrup(1)</li><br>
+                <li> <p id="sname">Cappuccino</p> = Shot(1) + SteamMilk(2) </li><br>
+                <li> <p id="sname">Decaffein</p> = DecaffeinBean(2) + Water(1)</li><br>
+
+            </ul>
+        </div>
+
     
 
 
+    
+    
     <p id="ingredients">Ingredients</p>
-    
-    
     <div class="ingredients">
+
+
         <img src="img/shot.jpg" alt="Shot">
         <input type="button" value="300원" onclick="btnFun1(1)">
         
@@ -82,18 +101,20 @@
 
         
     </div><br>
-    
+</div> 
+
+<div class="parents1">   
     <p id="cash">수익</p>
 
     <div class="money">
         <div id="photoprice">
-        <p id="img_prc" style="display: inline;">사진에서 넘어 올 가격</p> 
+        <p id="img_prc" style="display: inline;">사진에서 넘어 올 가격</p>    
         </div>
 
         <p style="display: inline;">-</p>
 
         <div id="i1">
-        <p id="putcoin" style="display: inline;">들어올돈</p>           
+        <p id="putcoin" style="display: inline;">들어올돈</p>
         </div>
 
         <p style="display: inline;">=</p>
@@ -105,9 +126,9 @@
 
     
     <div id="total">판매 수량</div>
-    <div id="total">총 매출 (누적값)</div>
-
-    
+    <div id="total1">총 매출 (누적값)</div>
+</div>
+  
 
 </body>
 </html>

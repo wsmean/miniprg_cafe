@@ -4,7 +4,7 @@ function setImg(coffee){
     // let 선언은 1번만 
     let $img;
     let file_name;
-    let img_prc=0;
+    let img_prc1=0;
     
     console.log(coffee);
     if(coffee == '1'){
@@ -34,10 +34,17 @@ function setImg(coffee){
     }
     file_name = $img.src;
     localStorage.setItem('file_name',file_name);
+    localStorage.setItem('price',img_prc1);
     window.open('kitchen.html');
-    localStorage.setItem('price',img_prc);
 }
 
+
+
+
+
+
+    
+            
 
 
 

@@ -3,17 +3,10 @@
     font-family: 'Jua', sans-serif;
     }
 
-    .ingredients{
-        position:absolute;
-        width: 1250px;
-        right: 100px;
-        top: 330px;
-        padding: 20px;
-        
-        border: 4px solid pink;
 
-    }
 
+    
+/* 제목 화면 */
     p#big_title{
         font-size:45px;
         padding-top: 40px;
@@ -40,31 +33,92 @@
     
     }
 
+/* 사진 ~ 재료묶은 부모 태그 */
+div.parents{
+    width: 100%;
+    height: 470px;
+    position: relative;
+}
+
+/* 수익~ 묶은 부모 태그 */
+
+div.parents1{
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+
+
+/* 사진 메뉴 화면 */
     p#menu{
     display: inline;
     font-size: 30px;
     position: absolute;
-    top: 230px;
-    left: 80px;
+    /* top: 0px; */
+    left: 58px;
     background-color: beige;
     }
 
+    #blank_img{
+        /* margin-left: 70px; */
+        width: 340px;
+        height: 340px;
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        border: 4px solid rgb(102, 152, 69);
+    }
+    #img1{
+        width: 340px;
+        height: 340px;
+    }
+
+    
+/* 레시피 화면 */
+    p#Receipe{
+        display: inline;
+        font-size: 26px;
+        background-color: beige;
+        position: absolute;
+        left:480px;
+
+
+    }
+    div#Receipe01{
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 480px;
+        top: 80px;
+
+ 
+    }
+
+    ul#Receipe02{
+        font-size: 16px;
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        border: 4px solid brown;
+        margin: 0;
+
+    }
+    p#sname{
+        display: inline;
+        background-color: rgb(255, 239, 156);
+    }
+
+
+
+/* 재료 화면 */
     p#ingredients{
         display: inline;
         font-size: 30px;
         position: absolute;
-        top: 230px;
-        left: 520px;
-        background-color: beige;
-    }
 
-    p#cash{
-        display: inline;
-        font-size: 26px;
+        right: 1200px;
         background-color: beige;
-        position:relative;
-        top: 120px;
-        left: 70px;
     }
 
     .ingredients img{
@@ -73,30 +127,38 @@
         width: 130px;
     }
 
-    #blank_img{
-        margin-left: 70px;
-        width: 300px;
-        height: 300px;
-        position: relative;
-        top: 73px;
-        border: 4px solid rgb(102, 152, 69);
+    .ingredients{
+        position:absolute;
+        width: 1250px;
+        right: 50px;
+        top: 85px;
+        padding: 20px;
+        
+        border: 4px solid pink;
+
     }
 
-    #img1{
-        width: 300px;
-        height: 300px;
+
+/* 수익 계산 화면 */
+
+    p#cash{
+        display: inline;
+        font-size: 26px;
+        background-color: beige;
+        position:relative;
+        top: 20px;
+        left: 58px;
     }
 
     div.money{
-        width: 1000px;
+        width: 700px;
         height: 50px;
-        position: relative;
-        top:150px;
-        margin-left: 70px;
+        position: absolute;
         border: 4px solid brown;
-        margin-bottom: 30px;
-        padding: 15px;
-
+        left: 58px;
+        top: 70px;
+        padding: 20px;
+    
     }
 
     div.total{
@@ -105,6 +167,10 @@
         margin-bottom: 30px;
         padding: 15px;
     }
+
+    
+    
+
 
     div#photoprice{
         padding: 5px;
@@ -120,6 +186,8 @@
         border: 2px solid black;
     }
 
+
+
     div#fure{
         padding: 5px;
         margin: 5px;
@@ -128,6 +196,15 @@
     }
 
     div#total{
+        font-size: 26px;
+        position: absolute;
+        right: 340px;
+        bottom: 80px;
+        padding: 15px;
+        display: inline;
+        border: 4px solid blue;
+    }
+    div#total1{
         font-size: 26px;
         position: absolute;
         right: 100px;
