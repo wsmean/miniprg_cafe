@@ -34,7 +34,9 @@
 <script>
     let $img = document.querySelector('#img1');
     let file_name1 = localStorage.getItem('file_name');
+    let img_prc = localStorage.getItem('price');
     $img.src = file_name1;
+    
 
     
     
@@ -85,14 +87,17 @@
 
     <div class="money">
         <div id="photoprice">
-            사진에서 넘어 올 가격
+        <p id="img_prc" style="display: inline;">사진에서 넘어 올 가격</p> 
         </div>
+
         <p style="display: inline;">-</p>
+
         <div id="i1">
-        <p id="putcoin" style="display: inline;">들어올돈</p>
-            
+        <p id="putcoin" style="display: inline;">들어올돈</p>           
         </div>
-        =
+
+        <p style="display: inline;">=</p>
+        
         <div id="fure">
             순수익
         </div>

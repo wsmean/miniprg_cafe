@@ -4,29 +4,38 @@ function setImg(coffee){
     // let 선언은 1번만 
     let $img;
     let file_name;
+    let img_prc=0;
     
     console.log(coffee);
     if(coffee == '1'){
-        $img = document.querySelector('#Ame');    
+        $img = document.querySelector('#Ame');
+        img_prc=4000;
+
     }else if(coffee == '2'){
         $img = document.querySelector('#Esp');
+        img_prc=3500;
         
     }else if(coffee == '3'){
         $img = document.querySelector('#Caf');
+        img_prc=4500;
         
     }else if(coffee == '4'){
         $img = document.querySelector('#Cam');
+        img_prc=4700;
         
     }else if(coffee == '5'){
         $img = document.querySelector('#Crm');
+        img_prc=5000;
         
     }else if(coffee == '6'){
         $img = document.querySelector('#Cpp');
+        img_prc=4700;
         
     }
     file_name = $img.src;
     localStorage.setItem('file_name',file_name);
-    window.open('kitchen.html')
+    window.open('kitchen.html');
+    localStorage.setItem('price',img_prc);
 }
 
 
