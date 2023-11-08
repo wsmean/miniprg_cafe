@@ -9,27 +9,27 @@ function setImg(coffee){
     console.log(coffee);
     if(coffee == '1'){
         $img = document.querySelector('#Ame');
-        img_prc=4000;
+        img_prc1=4000;
 
     }else if(coffee == '2'){
         $img = document.querySelector('#Esp');
-        img_prc=3500;
+        img_prc1=3500;
         
     }else if(coffee == '3'){
         $img = document.querySelector('#Caf');
-        img_prc=4500;
+        img_prc1=4500;
         
     }else if(coffee == '4'){
         $img = document.querySelector('#Cam');
-        img_prc=4700;
+        img_prc1=4700;
         
     }else if(coffee == '5'){
         $img = document.querySelector('#Crm');
-        img_prc=5000;
+        img_prc1=5000;
         
     }else if(coffee == '6'){
         $img = document.querySelector('#Cpp');
-        img_prc=4700;
+        img_prc1=4700;
         
     }
     file_name = $img.src;
@@ -46,6 +46,12 @@ function setImg(coffee){
     
             
 
+
+
+
+
+    
+            
 
 
 

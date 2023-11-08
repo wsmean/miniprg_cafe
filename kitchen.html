@@ -33,16 +33,7 @@
         <img id=img1 src="" alt="">
     </div>
 
-<script>
-    let $img = document.querySelector('#img1');
-    let file_name1 = localStorage.getItem('file_name');
-    $img.src = file_name1;
 
-    let img_prc1 = localStorage.getItem('price');
-    $img_prc = img_prc1;
-
-    
-</script>
 
         <p id="Receipe">Receipe</p>
         <div id="Receipe01">
@@ -76,7 +67,7 @@
         <input type="button" value="100원" onclick="btnFun1(2)">
 
         
-        <img src="img/milk.jpg" alt="Milk"> 
+        <img src="img/milk.jpg" alt="Milk">
         <input type="button" value="200원" onclick="btnFun1(3)">
 
         
@@ -120,7 +111,7 @@
         <p style="display: inline;">=</p>
         
         <div id="fure">
-            순수익
+            <p id="mymoney" style="display: inline;">순수익</p>
         </div>
     </div>
 
@@ -131,4 +122,24 @@
   
 
 </body>
+
+<script>
+    // 사진 넘겨 받는 값
+    let $img = document.querySelector('#img1');
+    let file_name1 = localStorage.getItem('file_name');
+    $img.src = file_name1;
+    
+    // 가격 넘겨 받는 값
+    let img_prc2 = localStorage.getItem('price');
+    let $img_prc = document.querySelector('#img_prc');
+    $img_prc.textContent= img_prc2;
+
+    
+    // 바인딩
+
+
+    // 순수익 값
+    
+
+</script>
 </html>

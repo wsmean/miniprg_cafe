@@ -23,9 +23,16 @@
         }else if(num == 8){
             coin += 400;
         }
-        console.log(coin);
+        // console.log(coin);
         document.getElementById('putcoin').innerHTML = coin;
+
+
+        let $mymoney = document.querySelector('#mymoney');
+
+        let img_prc3 = parseInt($img_prc.textContent);
+        $mymoney.textContent = (img_prc3 - coin);
         
     };
 
+    
     
