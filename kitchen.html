@@ -102,21 +102,20 @@
         <p id="img_prc" style="display: inline;">사진에서 넘어 올 가격</p>    
         </div>
 
-        <p style="display: inline;">-</p>
+        <p style="display: inline; font-size: 26px;">-</p>
 
         <div id="i1">
         <p id="putcoin" style="display: inline;">들어올돈</p>
         </div>
 
-        <p style="display: inline;">=</p>
+        <p style="display: inline; font-size: 26px;">=</p>
         
         <div id="fure">
             <p id="mymoney" style="display: inline;">순수익</p>
         </div>
     </div>
 
-    
-    <div id="total">판매 수량</div>
+    <button id="total">총 매출</button>
     <div id="total1">총 매출 (누적값)</div>
 </div>
   
@@ -133,12 +132,8 @@
     let img_prc2 = localStorage.getItem('price');
     let $img_prc = document.querySelector('#img_prc');
     $img_prc.textContent= img_prc2;
-
     
-    // 바인딩
 
-
-    // 순수익 값
     
 
 </script>

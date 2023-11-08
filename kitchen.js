@@ -34,5 +34,16 @@
         
     };
 
+
+
+    // 버튼 클릭시 총 매출 뜨게하기
+    let $total = document.querySelector('#total');
+    document.getElementById("total").onclick =  function(){
+        alert("내가 보이니?");
+        // total1.textContent = 
+    };
+
+    
+
     
     
