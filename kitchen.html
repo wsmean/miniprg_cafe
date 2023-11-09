@@ -12,7 +12,7 @@
     <!-- css -->
     <link rel="stylesheet" href="kitchen.css">
     <!-- javascript -->
-    <script src="kitchen.js"></script>
+    <script type="text/javascript" src="kitchen.js"></script>
 </head>
 
 <body>
@@ -115,26 +115,11 @@
         </div>
     </div>
 
-    <button id="total">총 매출</button>
-    <div id="total1">총 매출 (누적값)</div>
+    <button id="total" onclick="btnFun1(0)">총 매출</button>
+    <div id="addtotal">아직 한잔도 팔지 못했어... &#128549;</div>
 </div>
   
 
 </body>
 
-<script>
-    // 사진 넘겨 받는 값
-    let $img = document.querySelector('#img1');
-    let file_name1 = localStorage.getItem('file_name');
-    $img.src = file_name1;
-    
-    // 가격 넘겨 받는 값
-    let img_prc2 = localStorage.getItem('price');
-    let $img_prc = document.querySelector('#img_prc');
-    $img_prc.textContent= img_prc2;
-    
-
-    
-
-</script>
 </html>
