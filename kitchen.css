@@ -31,6 +31,13 @@
 
     
     }
+    img#cafe{
+        width: 100px;
+        height: 100px;
+        top: 30px;
+        position:absolute;
+        left: 30px;
+    }
 
 /* 사진 ~ 재료묶은 부모 태그 */
 div.parents{

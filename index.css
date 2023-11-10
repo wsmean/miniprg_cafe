@@ -1,90 +1,91 @@
-*{
 
-    font-family: 'Jua', sans-serif;
-}
+    *{
 
-p#big_title{
-    font-size:45px;
-    padding-top: 40px;
-    text-align: center;
-    height: 100px;
-    background-color: rgb(255, 203, 196);
-    margin: 0px;
-}
-
-h2{
-    padding: 20px;
-    margin-top: 0px;
-    font-style: italic;
-    color: rgb(255, 105, 105);
-    background-color:rgb(253, 227, 224);
-
-}
-
-img{
-    width: 270px;
-    height: 250px;
-    /* padding-right: 20px; */
-}
-img#person{
-    width: 200px;
-    height: 200px;
-    padding-right: 50px;
-    position: fixed;
-    right: 10px;
-    top: 20px;
-
-}
-
-p#title{
-    display: inline;
-    font-size: 30px;
-}
-
-p#line{
-    border: 1px solid black;
-    width: 200px;
-    margin-top: 0;
-}
-
-p#about{  
-    margin: 0;
-    display: inline;
-    color: rgb(133, 133, 133);
-    font-size: 20px;
-    text-align:start;
+        font-family: 'Jua', sans-serif;
+    }
     
-}
-
-p#price{
-    background-color: beige;
-    display: inline;
-}
-
-
-.img_box{
+    p#big_title{
+        font-size:45px;
+        padding-top: 40px;
+        text-align: center;
+        height: 100px;
+        background-color: rgb(255, 203, 196);
+        margin: 0px;
+    }
     
-    width: 270px;
-
-}
-
-.about_box{
-    position: relative;
-    left: 310px;
-    bottom: 255px;
-    display: inline;
-
-}
-
-button{
-    position: absolute;
-    top: 200px;
-    font-size: large;
-}
-hr{
-    /* margin-top: 30px; */
-    margin-bottom: 50px;
-}
-h3{
-    display: inline;
-}
+    h2{
+        padding: 20px;
+        margin-top: 0px;
+        font-style: italic;
+        color: rgb(255, 105, 105);
+        background-color:rgb(253, 227, 224);
+    
+    }
+    
+    img{
+        width: 270px;
+        height: 270px;
+        /* padding-right: 20px; */
+    }
+    img#person{
+        width: 200px;
+        height: 200px;
+        padding-right: 50px;
+        position: fixed;
+        right: 10px;
+        top: 20px;
+    
+    }
+    
+    p#title{
+        display: inline;
+        font-size: 30px;
+    }
+    
+    p#line{
+        border: 1px solid black;
+        width: 200px;
+        margin-top: 0;
+    }
+    
+    p#about{  
+        margin: 0;
+        display: inline;
+        color: rgb(133, 133, 133);
+        font-size: 20px;
+        text-align:start;
+        
+    }
+    
+    p#price{
+        background-color: beige;
+        display: inline;
+    }
+    
+    
+    .img_box{
+        
+        width: 270px;
+    
+    }
+    
+    .about_box{
+        position: relative;
+        left: 310px;
+        bottom: 255px;
+        display: inline;
+    
+    }
+    
+    button{
+        position: absolute;
+        top: 200px;
+        font-size: large;
+    }
+    hr{
+        /* margin-top: 30px; */
+        margin-bottom: 50px;
+    }
+    h3{
+        display: inline;
+    }

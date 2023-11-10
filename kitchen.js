@@ -10,7 +10,7 @@ window.onload = function() {
     // 가격 넘겨 받는 값
     img_prc2 = localStorage.getItem('price');
     $img_prc.textContent= img_prc2;
-    
+
     
     // 버튼 클릭시 총 매출 뜨게하기
     // let mymoney = localStorage.getItem('mymoney');
@@ -58,6 +58,8 @@ function btnFun1(num){
             " &#128176; 와! 오늘 "+($mymoney.textContent) +"원 벌었다 &#129297;";
     }
 }
+
+
 
 
 
